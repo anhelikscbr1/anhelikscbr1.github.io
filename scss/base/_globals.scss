@@ -1,0 +1,28 @@
+@use 'variables' as v;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body {
+    background-color: v.$backColor;
+    font-family: v.$mainFont;
+    font-size: 1.6rem;
+}
+
+.content{
+    width: 120rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
