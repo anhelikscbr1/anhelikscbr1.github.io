@@ -3,38 +3,43 @@
 
 .header{
     width: 100%;
-    background: white;
+    background: black;
     height: 25rem;
 }
 
-@include m.phone{
+@include m.tablet{
    .header{
         height: 9.5rem;
     } 
+    .reference{
+        text-align: center;
+        width: 13rem;
+    }
 }
 
 .header_aux{
     text-align: center;
-    background-color: white;
+    background-color: black;
     align-items: center;
     height: 100%;
         
     h2{
         font-weight: 400;
-        color: black;
+        color: white;
         span{
             font-weight: 800;
         }
     }
 
     .reference{
+        font-size: 1.6rem;
         margin: 0 0rem;
-        color: black;
+        color: white;
         padding:  3rem 2.5rem;
 
         &:hover{
-            background-color: black;
-            color: white;
+            background-color: v.$yellow;
+            color: black;
         }
     }
 
@@ -44,6 +49,7 @@
     }
 
     .title h2{
+        font-size: 3rem;
         padding: 2.5rem 2rem 1.5rem 2rem
     }
 

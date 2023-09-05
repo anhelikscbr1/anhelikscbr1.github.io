@@ -1,8 +1,19 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-@include m.phone{
+@include m.tablet{
     .aboutme{
         @include m.grid(2, 2rem);
+    }
+}
+
+.aboutme{
+    img{
+        width: auto;
+        height: 50rem;
+    }
+
+    p{
+        font-size: 2.33rem;
     }
 }

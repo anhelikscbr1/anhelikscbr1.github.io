@@ -30,3 +30,18 @@ a{
 .text-center{
     text-align: center;
 }
+
+.btn{
+    margin: 0 auto;
+    background-color: v.$yellow;
+    color: black;
+    display: block;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 0.2rem;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
