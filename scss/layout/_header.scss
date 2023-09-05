@@ -1,0 +1,67 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header{
+    width: 100%;
+    background: white;
+    height: 25rem;
+}
+
+@include m.phone{
+   .header{
+        height: 9.5rem;
+    } 
+}
+
+.header_aux{
+    text-align: center;
+    background-color: white;
+    align-items: center;
+    height: 100%;
+        
+    h2{
+        font-weight: 400;
+        color: black;
+        span{
+            font-weight: 800;
+        }
+    }
+
+    .reference{
+        margin: 0 0rem;
+        color: black;
+        padding:  3rem 2.5rem;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title h2{
+        padding: 2.5rem 2rem 1.5rem 2rem
+    }
+
+}
+
+@include m.phone{
+    .header_aux{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        justify-content: space-around;
+
+        .links{
+            display: flex;
+            flex-direction: row;
+        }
+        .title h2{
+            padding: 2rem 4rem;
+        }
+    }
+}
