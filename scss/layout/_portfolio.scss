@@ -1,0 +1,38 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.section-title{
+    margin-bottom: 0;
+    padding: 2rem 0 0 0;
+}
+
+.portfolio{
+    .card{
+        padding-top: 2rem;
+    }
+
+
+    img{
+        width: 35rem;
+        height: 25rem;
+    }
+}
+
+@include m.tablet{
+    .portfolio{
+        @include m.grid(2, 3rem);
+    }
+    
+}
+
+@include m.desktop{
+    .portfolio{
+        @include m.grid(4, 2rem);
+
+        img{
+            width: 27rem;
+            height: 17rem;
+        }
+    }
+    
+}

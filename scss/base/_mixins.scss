@@ -13,13 +13,13 @@
 }
 
 @mixin desktop {
-    @media(min-width: 992px){
+    @media(min-width: 1200px){
         @content;
     }
 }
 
 @mixin desxtopXL{
-    @media(min-width: 1200px){
+    @media(min-width: 1600px){
         @content;
     }
 } 
