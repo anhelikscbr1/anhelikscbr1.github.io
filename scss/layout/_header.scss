@@ -9,7 +9,10 @@
 
 @include m.tablet{
    .header{
-        height: 9.5rem;
+        z-index: 100;
+        position: fixed;
+        top: 0px;
+        height: 8rem;
     } 
     .reference{
         text-align: center;
