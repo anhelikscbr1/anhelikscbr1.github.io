@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.proyects{
+    img{
+        width: 100%;
+        height: auto;
+    } 
+    .card{
+        padding: 3rem 0;
+    }
+}
+    

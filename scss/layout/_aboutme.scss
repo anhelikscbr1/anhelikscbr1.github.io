@@ -3,7 +3,7 @@
 
 @include m.tablet{
     .aboutme{
-        @include m.grid(2, 2rem);
+        @include m.grid(2, 5rem);
     }
 }
 
