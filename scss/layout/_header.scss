@@ -60,6 +60,9 @@
 }
 
 @include m.tablet{
+    .header{
+        height: 8rem;
+    }
     .header_aux{
         display: flex;
         justify-content: center;

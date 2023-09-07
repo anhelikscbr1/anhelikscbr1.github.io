@@ -1,16 +1,6 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-
-@include m.tablet{
-    .aboutme{
-        @include m.grid(2, 5rem);
-    }
-    .first-title{
-        margin-top: 9rem;
-    }
-}
-
 .aboutme{
     margin-top: 3rem;
     img{
@@ -21,5 +11,68 @@
     p{
         font-size: 2.33rem;
     }
+    .text{
+        margin-top: 0;
+        margin-bottom: 5rem;
+        p{
+            margin-top: 0
+        }
+    }
 }
 
+.contact{
+    h3{
+        font-weight: 500;
+    }
+}
+
+@include m.tablet{
+    .aboutme{
+        @include m.grid(2, 0rem);
+        column-gap: 5rem;
+        row-gap: 2rem;
+        .text{
+            margin-bottom: 0rem;
+        }
+    }
+    .first-title{
+        margin-top: 9rem;
+    }
+
+}
+
+//* Logos
+.likedin {
+    max-width: 100px;
+}
+
+.github img{
+    max-width: 200px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+@include m.tablet{
+    .contact{
+        grid-column: 1/3;
+    }
+}
+
+@include m.desktop{
+    .aboutme{
+        row-gap: 0rem;
+    }
+    .photo{
+        grid-row: 1/3;
+    }
+
+    .contact{
+        //grid-row: 2/3;
+        grid-column: 2/3;
+    }
+}
