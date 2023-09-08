@@ -52,7 +52,7 @@
 
 .logos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     column-gap: 2rem;
 }
@@ -60,6 +60,9 @@
 @include m.tablet{
     .contact{
         grid-column: 1/3;
+    }
+    .logos{
+        column-gap: 6rem;
     }
 }
 

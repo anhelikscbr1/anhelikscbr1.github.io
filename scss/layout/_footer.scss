@@ -3,7 +3,6 @@
 
 .footer{
     background-color: black;
-    width: 100%;
     height: 42rem;
     .logos{
         justify-content: center;
@@ -14,8 +13,13 @@
     h3{
         padding-top: 2rem;
     }
+}
 
-
+.info{
+    img{
+        width: 30rem;
+        height: auto;
+    }
 }
 
 
@@ -28,10 +32,16 @@
         .logos{
             justify-content: center;
         }
+        h3{
+            margin-top: 0;
+            padding-top: 0rem;
+        }
     }
     .info{
         text-align: left;
     }
+
+
 
 }
 
