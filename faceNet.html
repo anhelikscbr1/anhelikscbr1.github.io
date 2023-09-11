@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anhelik WebDev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;700&family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>        
+    <header class=" header">
+        <div class="header_aux content">
+            <div class="title">
+                <a href="./index.html">
+                    <h2>Anhelik<span>WebDev</span></h2>
+                </a>
+
+            </div>
+            <div class="links">
+                <a class = "reference" href="./index.html">HOME</a>
+                <a class = "reference" href="#portfolio">REPO</a>
+                <a class = "reference" href="#footer">CONTACT</a>
+            </div>
+        </div>
+    </header>
+    <main class="content-blog blog">
+        <h1>Face recognition app using Python</h1>
+        <p>Face recognition represents an area of opportunity in research due to its multiple applications such as security, surveillance, marketing, identity identification, among many others. In this regard, different algorithms for face recognition have been proposed [1,2,3], however, these approaches have limited application in a real-world identification environment, becouse they require a large number of samples for the creation of their architecture, as well as the constant use of their database, in addition, deep learning can be computationally expensive, and the execution time is not fast enough to be used in the required conditions.</p>
+        <picture class="text-center">
+            <source srcset="" type="image/avif">
+            <source srcset = "" type="image/webp">
+            <img loading="lazy" width="800" src="./img/9.JPG" alt="image">
+        </picture>
+        <p class="figure-text">Figure 1. Position of point on the face for characterization, in this work these 68 points were processed to obtain a 128-dimensional characterization vector [4].</p>
+        <p>Depending on the application, it is possible to have a reduced number of samples to make a facial identification; the algorithms proposed to solve this problem are known as one-shot learning algorithms. The purpose is to have a photograph (or a few photographs) of a subject's face and be able to obtain information from that image that can be stored for later identification. This task proposes many challenges, due to the large number of variables that interact for a successful identification: different digital image formats (JPG, PNG, TIFF, etc) as well as the quality or size of the photographs being tested; that a person may look different due to the type of light, or the angle of the photo; changes in the face over time; the use of accessories or makeup; as well as the possibility that two or more people have similar faces [4].</p>
+        <p>FaceNet uses a Siamese neural network architecture that consists of a pair of identical networks to which different inputs are set [5]; because the parameters that give the outputs of the two networks are linked, this guarantees that, given similar inputs, the outputs cannot be mapped by their respective networks to very distant locations in the characterization space, because each neural network works exactly the same [6] An embedding can be represented as a point in an n-dimensional Euclidean space. A set of objects whose embedding is calculated can be represented as a set of points in a universe. This set can be used to perform various operations such as finding similarities, making recommendations, or clustering. The Euclidean distance between faces of the same identity is small, regardless of the conditions (light, image quality, etc.); while the Euclidean distance between a pair of images of different identities is large. </p>
+        <picture class="text-center">
+            <source srcset="" type="image/avif">
+            <source srcset = "" type="image/webp">
+            <img loading="lazy" width="800" src="./img/10.JPG" alt="image">
+        </picture>
+        <p class="figure-text">
+            Figure 2. The first 3 closest matches with respect to image A are shown with their Euclidean, Manhattan and Cosine distances. Person A, B and C are the same person, since D is another subject in the data base.
+        </p>
+        <p>In our application, we take as basis the program of Dr. Dhanoop Karunakaran's [9], in which he uses a simplification of FaceNet and MTCNN (Multi-Task Cascaded Convolutional Neural Networks). These are tools built with Tensorflow platform with Python and serve for face recognition and face detection in images, respectively. The original program found in [9] allows us to use pre-trained models of both MTCNN as well as FaceNnet, it is important to note that in this work we had not not trained a neural network for face classification, instead we use the embeddings that FaceNet gives us with its pre-trained networks. As it is today, the program is capable of create a database of faces, allow the user to store new individuals and find the best coincidence in the database in relation with a photograph chosen by the user. </p>
+
+        <section class="references">
+            <h2 class="text-center">References</h2>
+            <ol>
+                <li>Jia, Yangqing, and Trevor Darrell. "Latent task adaptation with large-scale hierarchies." Proceedings of the IEEE International Conference on Computer Vision. 2013. </li>
+                <li>Li, Xiaogang, et al. "Convolutional neural networks based transfer learning for diabetic retinopathy fundus image classification." Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI), 2017 10th International Congress on. IEEE, 2017.</li>
+                <li>Huang, Zhongling, Zongxu Pan, and Bin Lei. "Transfer learning with deep convolutional neural network for SAR target classification with limited labeled data." Remote Sensing 9.9 (2017): 907.</li>
+                <li>Thakurdesai, N., Raut, N. and Tripathi, A. (2018) ‘Face recognition using one-shot learning’, International Journal of Computer Applications, 182(23), pp. 35–39. doi:10.5120/ijca2018918032. </li>
+                <li>F. Schroff, D. Kalenichenko, and J. Philbin, FaceNet: A unified embedding for face recognition and clustering. 2015. doi: 10.1109/cvpr.2015.7298682.</li>
+                <li>G. Koch, R. Zemel, and R. Salakhutdinov, "Siamese Neural Networks for One-shot Image Recognition," 2015</li>
+                <li> D. Karunakaran, "One shot learning explained using FaceNet - Intro to Artificial
+                Intelligence - Medium," Medium, Sep. 27, 2018. [Online]. Available:
+                <a href="https://medium.com/intro-to-artificial-intelligence/one-shot-learning-explainedusing-facenet-dff5ad52bd38">https://medium.com/intro-to-artificial-intelligence/one-shot-learning-explainedusing-facenet-dff5ad52bd38</a>.</li>
+            </ol>
+        </section>
+    </main>
+    <footer class="footer-aux" id="footer">
+        <h2 class=" text-center">CONTACT ME!</h2>
+        <div class="content footer text-center">
+            <div class="info">
+                <a href="./index.html">
+                    <img src="img/8.JPG" alt="">
+                    </a>
+                <p>You can contact me through my <a href="https://www.linkedin.com/in/anhelik-alberto-blanco-escobar-b19497290/" target="_blank">LinkedIn</a> page or via email: anhelikescobar@gmail.com, you can find the code of my proyects in my <a href="https://github.com/anhelikscbr1" target="_blank">Github Page</a>.</p>
+            </div>
+            <div class="social text-center">
+                <h3>MY PAGES!</h3>
+                <div class="logos">
+                    <a href="https://www.linkedin.com/in/anhelik-alberto-blanco-escobar-b19497290/" class="linkedin" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/anhelikscbr1" class="github" target="_blank">
+                        <img src="img/src/2.png" alt="GithubPage">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-msg text-center" >© Copyright 2023. Made by <a href="index.html">AnhelikSCBR</a>.</p>
+    </footer>
+</body>
