@@ -20,22 +20,23 @@
             </div>
             <div class="links">
                 <a class = "reference" href="./index.html">HOME</a>
-                <a class = "reference" href="#portfolio">REPO</a>
+                <a class = "reference" href="https://github.com/anhelikscbr1/One-shot-learning-to-face-recognition-app" target="_blank">REPO</a>
                 <a class = "reference" href="#footer">CONTACT</a>
             </div>
         </div>
     </header>
     <main class="content-blog blog">
         <h1>Face recognition app using Python</h1>
+        <P>You can find the repository of this project in my <a href="https://github.com/anhelikscbr1/One-shot-learning-to-face-recognition-app" target="_blank">Github page.</a></P>
         <p>Face recognition represents an area of opportunity in research due to its multiple applications such as security, surveillance, marketing, identity identification, among many others. In this regard, different algorithms for face recognition have been proposed [1,2,3], however, these approaches have limited application in a real-world identification environment, becouse they require a large number of samples for the creation of their architecture, as well as the constant use of their database, in addition, deep learning can be computationally expensive, and the execution time is not fast enough to be used in the required conditions.</p>
         <picture class="text-center">
             <source srcset="" type="image/avif">
             <source srcset = "" type="image/webp">
             <img loading="lazy" width="800" src="./img/9.JPG" alt="image">
         </picture>
-        <p class="figure-text">Figure 1. Position of point on the face for characterization, in this work these 68 points were processed to obtain a 128-dimensional characterization vector [4].</p>
+        <p class="figure-text">Figure 1. Points position on the face for characterization, in this work 68 points were processed to obtain a 128-dimensional characterization vector [4].</p>
         <p>Depending on the application, it is possible to have a reduced number of samples to make a facial identification; the algorithms proposed to solve this problem are known as one-shot learning algorithms. The purpose is to have a photograph (or a few photographs) of a subject's face and be able to obtain information from that image that can be stored for later identification. This task proposes many challenges, due to the large number of variables that interact for a successful identification: different digital image formats (JPG, PNG, TIFF, etc) as well as the quality or size of the photographs being tested; that a person may look different due to the type of light, or the angle of the photo; changes in the face over time; the use of accessories or makeup; as well as the possibility that two or more people have similar faces [4].</p>
-        <p>FaceNet uses a Siamese neural network architecture that consists of a pair of identical networks to which different inputs are set [5]; because the parameters that give the outputs of the two networks are linked, this guarantees that, given similar inputs, the outputs cannot be mapped by their respective networks to very distant locations in the characterization space, because each neural network works exactly the same [6] An embedding can be represented as a point in an n-dimensional Euclidean space. A set of objects whose embedding is calculated can be represented as a set of points in a universe. This set can be used to perform various operations such as finding similarities, making recommendations, or clustering. The Euclidean distance between faces of the same identity is small, regardless of the conditions (light, image quality, etc.); while the Euclidean distance between a pair of images of different identities is large. </p>
+        <p>FaceNet uses a Siamese neural network architecture that consists of a pair of identical networks to which different inputs are set [5]; because the parameters that give the outputs of the two networks are linked, this guarantees that, given similar inputs, the outputs cannot be mapped by their respective networks to very distant locations in the characterization space, because each neural network works exactly the same [6]. An embedding can be represented as a point in an n-dimensional Euclidean space. A set of objects whose embedding is calculated can be represented as a set of points in a universe. This set can be used to perform various operations such as finding similarities, making recommendations, or clustering. The Euclidean distance between faces of the same identity is small, regardless of the conditions (light, image quality, etc.); while the Euclidean distance between a pair of images of different identities is large. </p>
         <picture class="text-center">
             <source srcset="" type="image/avif">
             <source srcset = "" type="image/webp">
@@ -45,7 +46,13 @@
             Figure 2. The first 3 closest matches with respect to image A are shown with their Euclidean, Manhattan and Cosine distances. Person A, B and C are the same person, since D is another subject in the data base.
         </p>
         <p>In our application, we take as basis the program of Dr. Dhanoop Karunakaran's [9], in which he uses a simplification of FaceNet and MTCNN (Multi-Task Cascaded Convolutional Neural Networks). These are tools built with Tensorflow platform with Python and serve for face recognition and face detection in images, respectively. The original program found in [9] allows us to use pre-trained models of both MTCNN as well as FaceNnet, it is important to note that in this work we had not not trained a neural network for face classification, instead we use the embeddings that FaceNet gives us with its pre-trained networks. As it is today, the program is capable of create a database of faces, allow the user to store new individuals and find the best coincidence in the database in relation with a photograph chosen by the user. </p>
-
+        <picture class="text-center">
+            <source srcset="" type="image/avif">
+            <source srcset = "" type="image/webp">
+            <img loading="lazy" width="800" src="./img/11.JPG" alt="image">
+        </picture>
+        <p class="figure-text"> Figure 3. Image of the GUI with a face query.
+        </p>
         <section class="references">
             <h2 class="text-center">References</h2>
             <ol>
@@ -68,7 +75,7 @@
                 <a href="./index.html">
                     <img src="img/8.JPG" alt="">
                     </a>
-                <p>You can contact me through my <a href="https://www.linkedin.com/in/anhelik-alberto-blanco-escobar-b19497290/" target="_blank">LinkedIn</a> page or via email: anhelikescobar@gmail.com, you can find the code of my proyects in my <a href="https://github.com/anhelikscbr1" target="_blank">Github Page</a>.</p>
+                <p>You can contact me through my <a href="https://www.linkedin.com/in/anhelik-alberto-blanco-escobar-b19497290/" target="_blank">LinkedIn</a> page or via email: anhelikscbr@gmail.com, you can find the code of my proyects in my <a href="https://github.com/anhelikscbr1" target="_blank">Github Page</a>.</p>
             </div>
             <div class="social text-center">
                 <h3>MY PAGES!</h3>
